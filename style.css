@@ -1,0 +1,56 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #6a0dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+#sobre {
+  text-align: center;
+}
+
+#sobre img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#lista-projetos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.projeto {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 10px;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  #lista-projetos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
